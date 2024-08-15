@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll("img");
-    const durationPerElement = 8; // Duration for each image in seconds
+    const images = document.querySelectorAll(".container img");
+    const durationPerElement = 2; // Duration for each image in seconds
 
     images.forEach((image, index) => {
         image.classList.add("anim"); // Add the animation class to each image
