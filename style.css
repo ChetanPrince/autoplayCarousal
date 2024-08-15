@@ -19,7 +19,10 @@
 }
 .anim{
     display: block;
-    animation: moveLeft 5s ease-in-out infinite;
+    animation: moveLeft 12s ease-in-out infinite;
+}
+.hide{
+    display: none;
 }
 
 @keyframes moveLeft {
@@ -27,7 +30,7 @@
         margin-left: 100%;
     }
     100%{
-        margin-left: -10%;
+        margin-left: -100%;
     }
     
 }
