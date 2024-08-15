@@ -15,11 +15,12 @@
     width: 90%;
     /* height: 150px; */
     position:absolute;
+    opacity: 0;
     
 }
 .anim{
     display: block;
-    animation: moveLeft 12s ease-in-out infinite;
+    animation: moveLeft 12s fadeInOut infinite;
 }
 .hide{
     display: none;
@@ -33,4 +34,15 @@
         margin-left: -100%;
     }
     
+} 
+
+/* .anim {
+    animation: fadeInOut 8s infinite;
 }
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+} */
