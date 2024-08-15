@@ -19,7 +19,7 @@
 }
 
 .anim {
-    animation: moveLeft 12s infinite;
+    animation: moveLeft 48s infinite;
 }
 
 @keyframes moveLeft {
@@ -35,8 +35,8 @@
         
         opacity: 1;
     }
-    40% {
-        opacity: 0;
+    80% {
+        opacity: 1;
     }
     100% {
         
