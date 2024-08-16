@@ -6,10 +6,6 @@
 body{
     background:#f2f2f2;
 }
-/* @keyframes slide {
-    from{transform:translateX(0);}
-    to{transform:translateX(-100%);}
-} */
 
 .container{
     overflow: hidden;
@@ -31,6 +27,26 @@ body{
 }
 
 
+@keyframes next1 {
+    from{left:0;}
+    to{left:-100%;}
+    
+}
+@keyframes next2 {
+    from{left:100%;}
+    to{left:0%;}
+    
+}
+@keyframes prev1 {
+    from{left:0;}
+    to{left:100%}
+    
+}
+@keyframes prev2 {
+    from{left:-100%;}
+    to{left:0%;}
+    
+}
 
 
 
