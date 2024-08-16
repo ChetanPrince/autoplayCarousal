@@ -1,20 +1,33 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll(".container img");
-    const totalDuration = 20; 
-    const durationPerElement = totalDuration / images.length; 
-    // function animationloop(){
+// document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".slide");
+    // const totalDuration = 20; 
+    // const durationPerElement = totalDuration / slides.length; 
+   
+    let counter = 0;
 
-        images.forEach((image, index) => {
-                image.classList.add("anim"); 
-                image.style.animationDuration = `${durationPerElement}s`; 
-                image.style.animationDelay = `${index * durationPerElement}s`; 
-                console.log(index)
-                setTimeout(()=>{
-                    image.classList.remove("anim")
-                }, durationPerElement * 1000);
-      
-        });
-    // }
-    // animationloop();
+slides.forEach((slide, index) => {
 
-    });
+    slide.style.left = `${index * 100}%`
+
+})
+const slideImage = () =>{
+    slides.forEach(
+        (slide)=>{
+            slide.style.transform =`translateX(-${counter * 100}%)`
+        }
+    )
+}
+   const goPrev = ()=>{
+    counter--;
+    slideImage();
+   }
+
+   const goNext = ()=>{
+    counter++;
+    slideImage();
+   }
+
+
+   slideImage();
+
+    // });
