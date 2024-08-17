@@ -10,18 +10,30 @@
 <body>
     <div class="container">
 
-    <img class="slide" src="images/2024-05-03T00_31_28.png" alt="">
-   <img class="slide" src="images/financial-crisis-or-wealth-budget-bankruptcy-free-vector.jpg" alt="">
-    
-   <img class="slide" src="images/freepik-19.jpg" alt="">
-    <img class="slide" src="images/vecteezy_happy-people-with-cash-stack-excited-about-win-or-victory_12983511.jpg" alt="">
-    <img class="slide" src="images/vecteezy_you-win-banner-casino-lottery-or-game-win_16265206.jpg" alt=""> 
-</div>
-<!-- <div class="nav">
-    <button onClick="goPrev()">Previous</button>
-    <button onClick="goNext()">Next</button>
-</div> -->
+    <div class="container-images">
 
-    <script src="script.js"></script>
+    <img class="active" src="images/2024-05-03T00_31_28.png" alt="">
+   <img src="images/financial-crisis-or-wealth-budget-bankruptcy-free-vector.jpg" alt="">
+    
+   <img src="images/freepik-19.jpg" alt="">
+    <img src="images/vecteezy_happy-people-with-cash-stack-excited-about-win-or-victory_12983511.jpg" alt="">
+    <img src="images/vecteezy_you-win-banner-casino-lottery-or-game-win_16265206.jpg" alt=""> 
+</div>
+
+<div class="nav">
+    <button class="prev" onClick="goPrev()">&#10094;</button>
+    <button class="next" onClick="goNext()">&#10095;</button>
+</div>
+
+<div class="buttons-div">
+    <div class="button active" attr="0" onClick="switchImage(this)"></div>
+    <div class="button" attr="0" onClick="switchImage(this)"></div>
+    <div class="button" attr="0" onClick="switchImage(this)"></div>
+    <div class="button" attr="0" onClick="switchImage(this)"></div>
+    <div class="button" attr="0" onClick="switchImage(this)"></div>
+</div>
+
+</div>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
